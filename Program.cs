@@ -1,5 +1,6 @@
 using System;
 using PingPong.Models;
+using System.Collections.Generic;
 
 namespace PingPong
 {
@@ -7,10 +8,19 @@ namespace PingPong
   {
     public static void Main()
     {
+
       Console.WriteLine("Enter a Whole Number:");
       string inputNumber = Console.ReadLine();
-      int myNumber = int.Parse(inputNumber);
+
+      PingPongObj pingpong = new PingPongObj(inputNumber);
+      int myNumber = pingpong.MyNumber;
+
+      List<PingPongObj> OutputList = new List<PingPongObj>() {};
+
+      
+
       Console.WriteLine(myNumber);
+      Main();
     }
   }
 }
