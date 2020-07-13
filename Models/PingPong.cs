@@ -10,10 +10,5 @@ namespace PingPong.Models
     {
       MyNumber = int.Parse(inputNumber);
     }
-    // public DisplayList()
-    // {
-    //   List<int> DisplayList = new List<int> {};
-    //   for (i = 0; i )
-    // }
   }
 }
